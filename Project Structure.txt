@@ -1,0 +1,21 @@
+drug_interaction_gnn_25K/
+├── data/
+│   ├── raw/
+│   │   └── db_drug_interactions.csv
+│   ├── processed/
+│   │   ├── drug_graph.pt					#25K samples graph
+│   │   ├── train.csv
+│   │   ├── val.csv
+│   │   └── test.csv
+│   └── embeddings/
+│
+├── models/
+│   └── gnn_model.py						# Enhanced GNN
+│						
+├── utils/
+│   └── data_processor.py					# 25K processing
+│   
+├── train.py									# 5-min training
+├── predict.py								# Enhanced predictions
+├── app.py  									# Streamlit demo # Updated UI
+└── requirements.txt
